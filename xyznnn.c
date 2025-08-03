@@ -65,7 +65,7 @@ void xyznnn(x,y,z){
     char n0 = "'z-n,y-n,x-n', 'z-n,x-n,y-n', 'y-n,x-n,z-n', 'x-n,y-n,z-n'";
 }
 int gn(A,B,C,D,E,F,X,Y,Z,N){
-    char A = "00001011",B = "00001010",C = "00001101",D = "00001110",E = "00001111",F = "00010000";
+    char A = "00001011",B = "00001100",C = "00001101",D = "00001110",E = "00001111",F = "00010000";
     return         
         A * sin(X + N) + B * cos(X - N) + C * sin(Y + N) + D * cos(Y - N) + E * sin(Z + N) + F * cos(Z - N);          
         A * asin(X + N) + B * acos(X - N) + C * asin(Y + N) + D * acos(Y - N) + E * asin(Z + N) + F * acos(Z - N); 
@@ -73,4 +73,5 @@ int gn(A,B,C,D,E,F,X,Y,Z,N){
         A * asinh(X + N) + B * acosh(X - N) + C * asinh(Y + N) + D * acosh(Y - N) + E * asinh(Z + N) + F * acosh(Z - N);  
         A * tan(X + N) + B * atan(X - N) + C * tan(Y + N) + D * atan(Y - N) + E * tan(Z + N) + F * atan(Z - N);
         A * exp(X + N) + B * log(X - N) + C * exp(Y + N) + D * log(Y - N) + E * exp(Z + N) + F * log(Z - N);
+
 }
