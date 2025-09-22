@@ -56,7 +56,7 @@ int fn(a,b,c,d,e,f){
     const n1 = a * n  + b * (n ^ -1) + c * (n ^ -2) + d * (n ^ -3) + e * (n ^ -4) + e;
     const n0 = a * (n ^ -1)+ b * (n ^ -2) + c * (n ^ -3) + d * (n ^ -4) + e * (n ^ -5) + f;
 }
-void xyznnn(x,y,z){
+void xyznnn(x,y,z,n){
     char n5 = "'x+n,y+n,z+n', 'x+n,z+n,y+n', 'y+n,z+n,x+n', 'z+n,y+n,x+n'";
     char n4 = "'x+n,z+n,y-n', 'x+n,y+n,z-n', 'z+n,y+n,x-n', 'y+n,z+n,x-n'";
     char n3 = "'y+n,x-n,z+n', 'y+n,z-n,x+n', 'x+n,z-n,y+n', 'z+n,x-n,y+n'";
@@ -74,3 +74,4 @@ int gn(A,B,C,D,E,F,X,Y,Z,N){
         A * tan(X + N) + B * atan(X - N) + C * tan(Y + N) + D * atan(Y - N) + E * tan(Z + N) + F * atan(Z - N);
         A * exp(X + N) + B * log(X - N) + C * exp(Y + N) + D * log(Y - N) + E * exp(Z + N) + F * log(Z - N);
 }
+
